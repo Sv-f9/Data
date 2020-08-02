@@ -34,6 +34,7 @@
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
@@ -43,13 +44,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -119,6 +120,27 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(236, 589);
             this.panel3.TabIndex = 18;
+            // 
+            // metroTile7
+            // 
+            this.metroTile7.ActiveControl = null;
+            this.metroTile7.BackColor = System.Drawing.SystemColors.Control;
+            this.metroTile7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTile7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.metroTile7.Location = new System.Drawing.Point(9, 146);
+            this.metroTile7.Name = "metroTile7";
+            this.metroTile7.Size = new System.Drawing.Size(214, 42);
+            this.metroTile7.Style = MetroFramework.MetroColorStyle.White;
+            this.metroTile7.TabIndex = 6;
+            this.metroTile7.Text = "Добавить подписок";
+            this.metroTile7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroTile7.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroTile7.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile7.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile7.UseCustomForeColor = true;
+            this.metroTile7.UseSelectable = true;
+            this.metroTile7.UseTileImage = true;
+            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
             // 
             // metroTile3
             // 
@@ -262,27 +284,6 @@
             this.metroTile1.UseStyleColors = true;
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
-            // metroTile7
-            // 
-            this.metroTile7.ActiveControl = null;
-            this.metroTile7.BackColor = System.Drawing.SystemColors.Control;
-            this.metroTile7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroTile7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.metroTile7.Location = new System.Drawing.Point(9, 146);
-            this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(214, 42);
-            this.metroTile7.Style = MetroFramework.MetroColorStyle.White;
-            this.metroTile7.TabIndex = 6;
-            this.metroTile7.Text = "Добавить подписок";
-            this.metroTile7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroTile7.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroTile7.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile7.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile7.UseCustomForeColor = true;
-            this.metroTile7.UseSelectable = true;
-            this.metroTile7.UseTileImage = true;
-            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -343,10 +344,32 @@
             this.label10.TabIndex = 30;
             this.label10.Text = ":";
             // 
+            // metroTile8
+            // 
+            this.metroTile8.ActiveControl = null;
+            this.metroTile8.BackColor = System.Drawing.SystemColors.Control;
+            this.metroTile8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroTile8.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.metroTile8.Location = new System.Drawing.Point(461, 27);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(157, 42);
+            this.metroTile8.Style = MetroFramework.MetroColorStyle.White;
+            this.metroTile8.TabIndex = 31;
+            this.metroTile8.Text = "Обновить список";
+            this.metroTile8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroTile8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroTile8.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile8.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile8.UseCustomForeColor = true;
+            this.metroTile8.UseSelectable = true;
+            this.metroTile8.UseTileImage = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
+            // 
             // ShowDataControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.metroTile8);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -397,5 +420,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private MetroFramework.Controls.MetroTile metroTile8;
     }
 }

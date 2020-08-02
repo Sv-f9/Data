@@ -39,7 +39,7 @@ namespace Data
             label5.Show();
             listBox1.Show();
             label1.Show();
-
+            metroTile8.Show();
             List<string> profiles = new List<string>();
             var jsonFormatter = new DataContractJsonSerializer(typeof(List<string>));
             try
@@ -71,7 +71,8 @@ namespace Data
         User profile;
         private void metroTile4_Click(object sender, EventArgs e)
         {
-            metroTile2.Hide();
+
+
             string selectedProfile = "";
 
             if ((listBox1.SelectedItem == null) && (textBox1.Text == ""))
@@ -89,7 +90,8 @@ namespace Data
                 selectedProfile = listBox1.SelectedItem.ToString();
             }
 
-
+            metroTile2.Hide();
+            metroTile8.Hide();
 
 
             metroTile4.Hide();
@@ -160,6 +162,7 @@ namespace Data
             label2.Hide();
             listBox2.Hide();
             metroTile1.Hide();
+            metroTile8.Hide();
 
             label3.Hide();
             label4.Hide();
@@ -234,6 +237,7 @@ namespace Data
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
+
             listBox2.Items.Clear();
 
             string mostLikeProfile = "";
@@ -269,6 +273,27 @@ namespace Data
             {
                 if (sidePerson.name != null)
                     listBox2.Items.Add($"{sidePerson.name} - 0");
+            }
+        }
+
+        private void metroTile8_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            List<string> profiles = new List<string>();
+            var jsonFormatter1 = new DataContractJsonSerializer(typeof(List<string>));
+            try
+            {
+                using (var file = new FileStream($"C:\\Data Analysis\\Persons.json", FileMode.OpenOrCreate))
+                {
+                    profiles = jsonFormatter1.ReadObject(file) as List<string>;
+                }
+            }
+            catch (System.Runtime.Serialization.SerializationException) { };
+
+            foreach (var profile in profiles)
+            {
+
+                listBox1.Items.Add($"Профиль:{profile}");
             }
         }
     }

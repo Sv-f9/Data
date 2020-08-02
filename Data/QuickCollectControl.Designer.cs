@@ -83,6 +83,7 @@
             this.metroTile3.UseCustomForeColor = true;
             this.metroTile3.UseSelectable = true;
             this.metroTile3.UseStyleColors = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click_1);
             // 
             // progressBar1
             // 
